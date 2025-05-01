@@ -15,6 +15,8 @@ hdf5_ver=os.getenv("hdf5_ver") or "1.14.0"
 netcdf_ver=os.getenv("netcdf_ver") or "4.9.2"
 load(pathJoin("hdf5-C", hdf5_ver))
 load(pathJoin("netcdf-C", netcdf_ver))
+cmake_ver=os.getenv("cmake_ver") or "3.20.2"
+load(pathJoin("cmake", cmake_ver))
 
 jasper_ver=os.getenv("jasper_ver") or "2.0.25"
 libpng_ver=os.getenv("libpng_ver") or "1.6.37"
@@ -23,13 +25,13 @@ load(pathJoin("jasper", jasper_ver))
 load(pathJoin("libpng", libpng_ver))
 load(pathJoin("zlib", zlib_ver))
 
-g2_ver=os.getenv("g2_ver") or "3.4.5"
-g2tmpl_ver=os.getenv("g2tmpl_ver") or "1.10.2"
+g2_ver=os.getenv("g2_ver") or "3.5.1"
+g2tmpl_ver=os.getenv("g2tmpl_ver") or "1.13.0"
 bacio_ver=os.getenv("bacio_ver") or "2.4.1"
 ip_ver=os.getenv("ip_ver") or "4.0.0"
 sp_ver=os.getenv("sp_ver") or "2.3.3"
 crtm_ver=os.getenv("crtm_ver") or "2.4.0.1"
-w3emc_ver=os.getenv("w3emc_ver") or "2.9.2"
+w3emc_ver=os.getenv("w3emc_ver") or "2.12.0"
 load(pathJoin("g2", g2_ver))
 load(pathJoin("g2tmpl", g2tmpl_ver))
 load(pathJoin("bacio", bacio_ver))
